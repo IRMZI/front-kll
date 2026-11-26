@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sul Coleta e Coopersul | Coleta e reciclagem em Portão/RS</title>
+<meta name="description" content="Sul Coleta faz a coleta de resíduos orgânicos e seletivos. A Coopersul, cooperativa de recicladores de Portão, faz a triagem e a reciclagem, e mantém o projeto Ecodindim nas escolas.">
+<meta name="theme-color" content="#0E1612">
+<meta property="og:title" content="Sul Coleta e Coopersul">
+<meta property="og:description" content="Da coleta à reciclagem, em Portão/RS e região.">
+<meta property="og:image" content="/img/drone-avenida.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="/img/logo-sulcoleta-preto.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:#14201A;background:#F4F3EE;line-height:1.6}
+img{max-width:100%;display:block}
+a{color:#1F6B3A}a:hover{color:#14482A}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.dark{background:#0E1612;color:#F2F1EA}
+.dark p,.dark .muted{color:#C9D1CB}
+.lime{background:#9BE15D;color:#0E1612}
+section{padding:clamp(48px,6vw,72px) 0}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#1F6B3A;margin:0}
+.dark .eyebrow{color:#9BE15D}
+h1,h2,.display{font-family:'Bebas Neue',sans-serif;font-weight:400;margin:0;line-height:.95;letter-spacing:.5px}
+h1{font-size:clamp(40px,6vw,64px)}
+h2{font-size:clamp(34px,4.6vw,48px)}
+h3{margin:0;font-size:18px;font-weight:700}
+p{margin:0}
+.muted{color:#4A574F}
+.lead{font-size:17px;max-width:520px}
+.stack{display:flex;flex-direction:column;gap:18px}
+.row{display:flex;flex-wrap:wrap;gap:36px;align-items:center}
+.row>*{flex:1 1 420px;min-width:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{background:#fff;border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.dark .card{background:#17221C}
+.ph{width:100%;object-fit:cover;border-radius:20px}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:13px 22px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none}
+.btn-lime{background:#9BE15D;color:#0E1612}.btn-lime:hover{color:#0E1612;background:#B2EC7E}
+.btn-dark{background:#0E1612;color:#F2F1EA}.btn-dark:hover{color:#F2F1EA;background:#24332B}
+.btn-ghost{border:1.5px solid #5B6B61;color:#F2F1EA}.btn-ghost:hover{color:#F2F1EA;border-color:#9BE15D}
+.tag{display:inline-block;align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:5px 12px;border-radius:999px;background:#E3F5D2;color:#1F4D2C}
+/* header */
+header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:16px;padding-bottom:16px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:#F2F1EA}
+.brand img{height:34px;width:auto}
+.brand span{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:1px;line-height:1}
+.brand i{width:1px;height:30px;background:#3A4A40}
+nav{display:flex;flex-wrap:wrap;align-items:center;gap:24px;font-size:15px;font-weight:500}
+nav a{color:#F2F1EA;text-decoration:none}nav a:hover{color:#9BE15D}
+@media (max-width:760px){nav a:not(.btn){display:none}}
+/* hero */
+.hero .wrap{display:flex;flex-wrap:wrap;gap:36px;align-items:center;padding-top:40px;padding-bottom:56px}
+.hero-text{flex:1 1 440px;min-width:0;display:flex;flex-direction:column;gap:20px}
+.hero-photos{flex:1 1 500px;min-width:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.hero-photos img:first-child{grid-column:span 2;height:230px}
+.hero-photos img{height:150px}
+/* facts */
+.facts .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;padding-top:22px;padding-bottom:22px}
+.facts strong{display:block;font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:30px;line-height:1}
+.facts span{font-size:14px;font-weight:500}
+/* duas frentes */
+.duo{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.duo .card{padding:28px;gap:14px}
+.duo .card.dark{background:#0E1612}
+.duo dl{margin:6px 0 0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:14px}
+.duo dt{font-weight:600}
+.duo dd{margin:0}
+/* processo */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+.steps li{border-top:2px solid #9BE15D;padding-top:16px;display:flex;flex-direction:column;gap:6px}
+.steps b{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:22px;color:#9BE15D}
+.steps strong{font-size:17px}
+.steps span{font-size:15px}
+.light .steps b{color:#1F6B3A}
+/* ecodindim */
+.eco{background:#E3F5D2}
+.coin{width:120px;height:120px;border-radius:50%;background:#9BE15D;border:6px solid #0E1612;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:26px;line-height:.9;text-align:center;color:#0E1612;flex:0 0 auto}
+.partners{display:flex;flex-wrap:wrap;gap:10px}
+.partners span{background:#fff;border-radius:999px;padding:8px 16px;font-size:14px;font-weight:600}
+.ph-slot{border:2px dashed #7FA88E;border-radius:20px;min-height:220px;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;color:#2E5B3C;font-weight:600;font-size:15px;background:rgba(255,255,255,.5)}
+/* história */
+.timeline{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:28px;border-left:2px solid #C9D9CE;padding-left:28px}
+.timeline li{position:relative;display:flex;flex-direction:column;gap:6px}
+.timeline li::before{content:"";position:absolute;left:-36px;top:6px;width:14px;height:14px;border-radius:50%;background:#9BE15D;border:3px solid #0E1612}
+.timeline .when{font-family:'Bebas Neue',sans-serif;font-size:24px;line-height:1;color:#1F6B3A}
+.old{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.old figure{margin:0;display:flex;flex-direction:column;gap:8px}
+.old figcaption{font-size:13px;color:#4A574F}
+.memoria{background:#fff;border-radius:20px;padding:28px;display:flex;flex-wrap:wrap;gap:24px;align-items:center}
+.memoria .ph-slot{flex:0 0 220px;min-height:260px}
+.memoria div.txt{flex:1 1 320px;display:flex;flex-direction:column;gap:10px}
+/* cta */
+.cta{background:#9BE15D;border-radius:28px;padding:clamp(32px,5vw,56px) clamp(24px,4vw,48px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:28px}
+.cta>div{flex:1 1 460px;min-width:0;display:flex;flex-direction:column;gap:10px}
+.cta h2{font-size:clamp(30px,4vw,42px);color:#0E1612}
+/* footer */
+footer{padding:56px 0 32px}
+footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:36px}
+footer .cols>div{display:flex;flex-direction:column;gap:8px;font-size:15px;color:#C9D1CB}
+footer strong{color:#F2F1EA;font-size:13px;letter-spacing:1.5px;text-transform:uppercase}
+footer a{color:#9BE15D}footer a:hover{color:#C7F2A2}
+footer .base{border-top:1px solid #2A3830;margin-top:40px;padding-top:22px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:13px;color:#9AA59E}
+</style>
+</head>
+<body>
+
+<header class="dark">
+  <div class="wrap">
+    <a class="brand" href="#topo">
+      <img src="/img/logo-sulcoleta-branco.png" alt="Sul Coleta">
+      <i></i>
+      <span>Coopersul</span>
+    </a>
+    <nav aria-label="Principal">
+      <a href="#sul-coleta">Coleta</a>
+      <a href="#coopersul">Reciclagem</a>
+      <a href="#ecodindim">Ecodindim</a>
+      <a href="#historia">Nossa história</a>
+      <a href="#contato">Contato</a>
+      <a class="btn btn-lime" href="https://wa.me/5551999684318">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.5 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"></path></svg>
+        Pedir orçamento
+      </a>
+    </nav>
+  </div>
+</header>
+
+<section id="topo" class="dark hero" style="padding:0">
+  <div class="wrap">
+    <div class="hero-text">
+      <p class="eyebrow">Portão e Capela de Santana / RS · há 20 anos</p>
+      <h1>A Sul Coleta recolhe. A Coopersul recicla.</h1>
+      <p class="lead">Coleta de resíduos orgânicos e seletivos com a Sul Coleta, e triagem e reciclagem com a Coopersul, a cooperativa dos recicladores de Portão. Uma família que cuida do lixo da cidade há duas décadas.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;padding-top:6px">
+        <a class="btn btn-lime" href="https://wa.me/5551999684318">Falar no WhatsApp</a>
+        <a class="btn btn-ghost" href="#ecodindim">Conhecer o Ecodindim</a>
+      </div>
+    </div>
+    <div class="hero-photos">
+      <img class="ph" src="/img/drone-avenida.jpg" alt="Caminhão de coleta passando pelo centro de Portão, visto de drone">
+      <img class="ph" src="/img/drone-coleta-centro.jpg" alt="Coletor recolhendo sacos de lixo reciclável no caminhão">
+      <img class="ph" src="/img/triagem-equipe.jpg" alt="Equipe da cooperativa separando recicláveis na esteira">
+    </div>
+  </div>
+</section>
+
+<section aria-label="Destaques" class="lime facts" style="padding:0">
+  <div class="wrap">
+    <div><strong>20 anos</strong><span>Coletando em Portão e região</span></div>
+    <div><strong>Orgânicos + seletivos</strong><span>Os dois tipos de coleta</span></div>
+    <div><strong>Reciclagem cooperada</strong><span>Triagem feita pela Coopersul</span></div>
+    <div><strong>Ecodindim</strong><span>Educação ambiental nas escolas</span></div>
+  </div>
+</section>
+
+<!-- DUAS FRENTES -->
+<section>
+  <div class="wrap stack" style="gap:32px">
+    <div class="stack" style="gap:12px;max-width:640px">
+      <p class="eyebrow">Quem faz o quê</p>
+      <h2>Duas frentes, um mesmo caminho</h2>
+    </div>
+    <div class="duo">
+      <article class="card">
+        <img src="/img/logo-sulcoleta-preto.png" alt="Sul Coleta" style="height:40px;width:auto;align-self:flex-start">
+        <p class="muted">Empresa de coleta e limpeza ambiental. Recolhe o lixo orgânico e o seletivo nas ruas, com caminhão compactador e equipe própria.</p>
+        <dl>
+          <dt>Faz</dt><dd>Coleta de resíduos orgânicos e seletivos</dd>
+          <dt>Onde</dt><dd>Rua Paraíba, 297, Centro, Portão/RS</dd>
+        </dl>
+        <a href="#sul-coleta" style="font-weight:600">Ver a coleta →</a>
+      </article>
+      <article class="card dark">
+        <span class="display" style="font-size:40px;line-height:1">Coopersul</span>
+        <p>Cooperativa de Trabalho dos Recicladores de Portão. Recebe o material coletado, separa na esteira, prensa e encaminha para a reciclagem.</p>
+        <dl style="color:#C9D1CB">
+          <dt style="color:#F2F1EA">Faz</dt><dd>Triagem, reciclagem e educação ambiental</dd>
+          <dt style="color:#F2F1EA">Onde</dt><dd>RS-240, nº 1301, km 17,7, Capela de Santana/RS</dd>
+        </dl>
+        <a href="#coopersul" style="font-weight:600;color:#9BE15D">Ver a reciclagem →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SUL COLETA -->
+<section id="sul-coleta" style="padding-top:0">
+  <div class="wrap row">
+    <div class="stack">
+      <span class="tag">Sul Coleta</span>
+      <h2>A coleta que passa na sua rua</h2>
+      <p class="muted lead">A Sul Coleta faz a coleta do lixo orgânico e do seletivo, com rotas programadas e equipe uniformizada. Atendemos municípios e empresas da região.</p>
+      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px">
+        <div class="card" style="padding:18px"><h3>Coleta orgânica</h3><p class="muted" style="font-size:14px">Lixo domiciliar recolhido com caminhão compactador.</p></div>
+        <div class="card" style="padding:18px"><h3>Coleta seletiva</h3><p class="muted" style="font-size:14px">Recicláveis separados que seguem para a Coopersul.</p></div>
+        <div class="card" style="padding:18px"><h3>Limpeza ambiental</h3><p class="muted" style="font-size:14px">Apoio a municípios em limpeza de ruas e espaços públicos.</p></div>
+      </div>
+    </div>
+    <img class="ph" loading="lazy" src="/img/familia-caminhao.jpg" alt="Cláudia, o pai Romeu e o irmão Ronaldo em frente a um caminhão novo da frota" style="height:clamp(320px,40vw,440px);object-position:center 62%">
+  </div>
+</section>
+
+<!-- COOPERSUL -->
+<section id="coopersul" class="dark">
+  <div class="wrap stack" style="gap:36px">
+    <div class="row">
+      <div class="stack">
+        <p class="eyebrow">Coopersul · cooperativa de recicladores</p>
+        <h2>O lixo chega. O material volta pra cadeia.</h2>
+        <p>Na usina da Coopersul, às margens da RS-240 em Capela de Santana, o que a coleta seletiva traz passa pela esteira, é separado por tipo pelos cooperados e prensado em fardos para seguir para a indústria de reciclagem.</p>
+      </div>
+      <img class="ph" loading="lazy" src="/img/drone-usina-aerea.jpg" alt="Vista aérea da usina com caminhão descarregando" style="height:310px">
+    </div>
+    <ol class="steps">
+      <li><b>01</b><strong>Chegada</strong><span class="muted">O caminhão descarrega o material coletado.</span></li>
+      <li><b>02</b><strong>Triagem</strong><span class="muted">A equipe separa tudo à mão na esteira.</span></li>
+      <li><b>03</b><strong>Prensagem</strong><span class="muted">Cada material vira fardo compacto.</span></li>
+      <li><b>04</b><strong>Destinação</strong><span class="muted">Recicláveis seguem para a indústria; o rejeito, para o aterro licenciado.</span></li>
+    </ol>
+    <div class="grid" style="gap:12px">
+      <img class="ph" loading="lazy" src="/img/triagem-mulheres.jpg" alt="Duas cooperadas fazendo a triagem" style="height:210px">
+      <img class="ph" loading="lazy" src="/img/triagem-esteira.jpg" alt="Cooperados trabalhando na esteira de triagem" style="height:210px">
+      <img class="ph" loading="lazy" src="/img/drone-usina-caminhao.jpg" alt="Caminhão de coleta chegando à usina" style="height:210px">
+    </div>
+  </div>
+</section>
+
+<!-- ECODINDIM -->
+<section id="ecodindim" class="eco">
+  <div class="wrap stack" style="gap:36px">
+    <div class="row" style="align-items:flex-start">
+      <div class="stack">
+        <span class="tag" style="background:#0E1612;color:#9BE15D">Projeto da Coopersul</span>
+        <h2>Ecodindim: reciclar vale moeda na escola</h2>
+        <p class="muted lead">O Ecodindim é o projeto de educação ambiental da Coopersul dentro do programa Escola Sustentável. Os alunos separam recicláveis em casa, levam para a escola e trocam por Ecodindim, uma moeda ecológica.</p>
+        <div class="partners" aria-label="Parceiros do projeto">
+          <span>Prefeitura de Portão</span><span>Câmara de Vereadores de Portão</span><span>Sicredi Pioneira</span><span>CDL Portão</span>
+        </div>
+        <div><a class="btn btn-dark" href="https://www.instagram.com/ecodindim.portao" target="_blank" rel="noopener">Siga o Ecodindim no Instagram @ecodindim.portao</a></div>
+      </div>
+      <div class="stack" style="gap:14px">
+        <div style="display:flex;gap:20px;align-items:center">
+          <div class="coin" aria-hidden="true">Eco<br>dindim</div>
+          <p style="font-weight:600;font-size:17px">Cada material separado vira saldo para o aluno, e o aprendizado vai junto para casa.</p>
+        </div>
+        <ol class="steps light" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
+          <li><b>01</b><strong>Separa</strong><span class="muted">O aluno separa o reciclável em casa.</span></li>
+          <li><b>02</b><strong>Leva</strong><span class="muted">Entrega o material na escola.</span></li>
+          <li><b>03</b><strong>Troca</strong><span class="muted">Recebe Ecodindim pelo que trouxe.</span></li>
+        </ol>
+      </div>
+    </div>
+    <div class="grid" style="gap:12px">
+      <div class="ph-slot">[Foto do Ecodindim nas escolas, pedir ao Felipe]</div>
+      <div class="ph-slot">[Foto dos alunos trocando recicláveis]</div>
+      <div class="ph-slot">[Foto com os parceiros do projeto]</div>
+    </div>
+  </div>
+</section>
+
+<!-- HISTÓRIA -->
+<section id="historia">
+  <div class="wrap stack" style="gap:40px">
+    <div class="row" style="align-items:flex-start">
+      <div class="stack">
+        <p class="eyebrow">Nossa história</p>
+        <h2>Começou em família, e segue em família</h2>
+        <p class="muted lead">Tudo começou com uma ideia da Cláudia Moutinho, abraçada pela família inteira: a filha Letícia, o pai Romeu e o irmão Ronaldo. Sem veículo e sem usina, eles abriram a empresa e construíram cada etapa com as próprias mãos.</p>
+      </div>
+      <ol class="timeline">
+        <li><span class="when">Janeiro de 2006</span><strong>O começo</strong><span class="muted">Sem caminhão e sem usina, a Cláudia compra o primeiro caminhão 100% financiado e assume uma usina desativada do município.</span></li>
+        <li><span class="when">Os primeiros passos</span><strong>A usina volta a funcionar</strong><span class="muted">Obra e reforma da usina e do galpão de triagem, com os primeiros caminhões da frota.</span></li>
+        <li><span class="when">2024</span><strong>A nova geração</strong><span class="muted">A filha da Cláudia abre a própria empresa, a Sul Coleta, para seguir nas mesmas atividades: coleta e reciclagem.</span></li>
+        <li><span class="when">2026</span><strong>Reconhecimento</strong><span class="muted">Homenagem no Café Empresarial Prefeitos do Sul, representando o empreendedorismo de Portão.</span></li>
+      </ol>
+    </div>
+    <div class="old">
+      <figure><img class="ph" loading="lazy" src="/img/historia-obra-usina.jpg" alt="Foto antiga da obra da usina, com os pilares de concreto erguidos" style="height:220px"><figcaption>A obra da usina, nos primeiros anos</figcaption></figure>
+      <figure><img class="ph" loading="lazy" src="/img/historia-primeiro-galpao.jpg" alt="Foto antiga do primeiro galpão de triagem pronto" style="height:220px"><figcaption>O primeiro galpão pronto</figcaption></figure>
+      <figure><img class="ph" loading="lazy" src="/img/historia-turma-galpao.jpg" alt="Equipe e famílias reunidas em uma confraternização no galpão" style="height:220px;object-position:center 15%"><figcaption>A turma reunida no galpão</figcaption></figure>
+    </div>
+    <div class="memoria">
+      <div class="ph-slot">[Foto da Letícia dirigindo o caminhão]</div>
+      <div class="txt">
+        <p class="eyebrow">Em memória</p>
+        <h2 style="font-size:clamp(30px,4vw,40px)">Letícia</h2>
+        <p class="muted">Filha da Cláudia, a Letícia foi motorista de caminhão e trabalhou cerca de 15 anos com a gente. Parte do que somos hoje passou pelas mãos e pelo volante dela.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RECONHECIMENTO -->
+<section class="dark">
+  <div class="wrap row">
+    <div class="stack">
+      <p class="eyebrow">Reconhecimento</p>
+      <h2>Homenageados pelo empreendedorismo de Portão</h2>
+      <p>No Café Empresarial Prefeitos do Sul, a Sul Coleta foi homenageada representando o empreendedorismo da cidade de Portão, ao lado de empresas e municípios da região.</p>
+    </div>
+    <div class="grid" style="gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))">
+      <img class="ph" loading="lazy" src="/img/homenagem-palco.jpg" alt="Entrega da homenagem no palco do Café Empresarial" style="height:320px">
+      <img class="ph" loading="lazy" src="/img/homenagem-plateia.jpg" alt="Homenageados no palco do Café Empresarial, com a plateia à frente" style="height:320px">
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section>
+  <div class="wrap">
+    <div class="cta">
+      <div>
+        <h2>Precisa de coleta ou reciclagem no seu município ou empresa?</h2>
+        <p style="color:#1C2B22">Conte o tipo de resíduo e o volume. A gente faz uma visita e responde com uma proposta.</p>
+      </div>
+      <a class="btn btn-dark" href="https://wa.me/5551999684318">(51) 99968-4318</a>
+    </div>
+  </div>
+</section>
+
+<footer id="contato" class="dark">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <img src="/img/logo-sulcoleta-branco.png" alt="Sul Coleta" style="height:44px;width:auto;align-self:flex-start">
+        <span class="display" style="font-size:28px;color:#F2F1EA">Coopersul</span>
+      </div>
+      <div>
+        <strong>Fale com a gente</strong>
+        <span>Coopersul · Cláudia (responsável geral)</span>
+        <a href="https://wa.me/5551999684318">(51) 99968-4318</a>
+        <span style="padding-top:6px">Sul Coleta</span>
+        <a href="https://wa.me/5551999866843">(51) 99986-6843</a>
+        <a href="https://wa.me/5551995667210">(51) 99566-7210 · Carlos</a>
+        <a href="mailto:sulcoletasportao@gmail.com">sulcoletasportao@gmail.com</a>
+        <a href="https://instagram.com/sulcoletas">@sulcoletas</a>
+      </div>
+      <div>
+        <strong>Endereços</strong>
+        <span>Sul Coleta: Rua Paraíba, 297, Centro, Portão/RS</span>
+        <span>Coopersul: RS-240, nº 1301, km 17,7, Capela de Santana/RS</span>
+      </div>
+    </div>
+    <div class="base">
+      <span>Sul Coleta e Limpeza Ambiental Ltda · CNPJ 57.740.973/0001-84</span>
+      <span>Coopersul, Cooperativa de Trabalho dos Recicladores de Portão · CNPJ 44.519.501/0001-54</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
